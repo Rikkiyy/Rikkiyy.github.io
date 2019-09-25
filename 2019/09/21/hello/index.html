@@ -135,16 +135,16 @@
 </ul>
 <h6 id="接下来，就是跟着教程操作啦，在这里我会记录一下实际操作过程中遇到的问题以及我的收获"><a href="#接下来，就是跟着教程操作啦，在这里我会记录一下实际操作过程中遇到的问题以及我的收获" class="headerlink" title="接下来，就是跟着教程操作啦，在这里我会记录一下实际操作过程中遇到的问题以及我的收获"></a>接下来，就是跟着教程操作啦，在这里我会记录一下实际操作过程中遇到的问题以及我的收获</h6><ol>
 <li><p>准备环境主要是为了安装hexo。这里我曾搜索了一下，hexo是一种轻量级博客框架，相对来说配置比较简单。<br>很多人比较倾向于用Git+Github+Markdown+hexo的博客搭建方案，况且是for free。<br>另外一种免费的且常用的方案是采用了Jekyll 框架，但好像因为一些原因安装出现阻力。。。<br>安装git和node以及npm都无问题，第一个问题出现在安装hexo-cli的命令上：<br><code>npm install -g hexo-cli</code><br>因为我是通过软件管理器从默认软件仓库安装的 Node.js 。所以出现了一些权限问题，在官网上看到了两种解决方案（但不要用sudo）一种是使用节点版本管理器重新安装npm（这个是网站更推荐的方式，hhh但我不知道为啥没操作成功采取了第二种），另一种是手动更改npm的默认目录：  </p>
-<img src="/home/rikkiyang/myBlog/source/pictures/1.jpg" srcset="/img/loading.gif" width="700">  
+<img src="/pictures/1.jpg" srcset="/img/loading.gif" width="700">  
 
 <p>更改后在使用该命令就解决了上一个问题，但弹出来了新的问题。</p>
 </li>
 <li><p>用三行代码<code>hexo init myBlog</code> <code>cd myBlog</code>   <code>npm install</code><br>后就会新建我的myblog文件夹<br>运行hexo s会弹出来一个http：//localhost：4000的链接 复制到浏览器即可看到预览的网站<br>这个时候虽然生成了新的文件们，但是随之而来的还有许多警告们。</p>
 </li>
 <li><p>注册github后我的第一件事不是立刻建立博客相关的仓库，而是<strong>学习了一下github的简单使用流程。</strong><br>首先我建立了一个叫works的仓库,建立新的分支，刚好把我原始的readme内容填充为本周老师布置的java代码，然后保存更改，创建请求，合并拉取请求并删除临时建立的分支。  </p>
-<img src="/home/rikkiyang/myBlog/source/pictures/3.jpg" srcset="/img/loading.gif" width="500">  
-<img src="/home/rikkiyang/myBlog/source/pictures/4.jpg" srcset="/img/loading.gif" width="800">    
-<img src="/home/rikkiyang/myBlog/source/pictures/13.png" srcset="/img/loading.gif" width="800">
+<img src="/pictures/3.jpg" srcset="/img/loading.gif" width="500">  
+<img src="/pictures/4.jpg" srcset="/img/loading.gif" width="800">    
+<img src="/pictures/13.png" srcset="/img/loading.gif" width="800">
 
 <p>这是相关的截图。<br>后来又建立了以用户名开头以.github.io结尾的仓库为搭建博客做准备。</p>
 </li>
@@ -157,22 +157,22 @@
 <li>Git 可以使用四种主要的协议来传输资料：本地协议（Local），HTTP 协议，SSH（Secure Shell）协议及 Git 协议。   </li>
 </ul>
 <p>因为之前电脑上生成过ssh key，使用<code>cat ~/.ssh/id_rsa.pub</code>命令即可查看ssh key  </p>
-<img src="/home/rikkiyang/myBlog/source/pictures/5.jpg" srcset="/img/loading.gif" width="500">  </li>
+<img src="/pictures/5.jpg" srcset="/img/loading.gif" width="500">  </li>
 <li><p>部署到github要先修改 _config.yml 配置文件配置参数，在生成的blog相关文件夹里。  </p>
-<img src="/home/rikkiyang/myBlog/source/pictures/6.jpg" srcset="/img/loading.gif" width="500">  
+<img src="/pictures/6.jpg" srcset="/img/loading.gif" width="500">  
 
 <p>在接下来的安装部署插件时 <code>npm install hexo-deployer-git --save</code>又出了问题 大概有4，5个WARNING，最后被我反复修改变得只有两个，</p>
-<img src="/home/rikkiyang/myBlog/source/pictures/2.jpg" srcset="/img/loading.gif" width="700">  </li>
+<img src="/pictures/2.jpg" srcset="/img/loading.gif" width="700">  </li>
 </ol>
 <ul>
-<li><img src="/home/rikkiyang/myBlog/source/pictures/7.png" srcset="/img/loading.gif" width="700">  
+<li><img src="/pictures/7.png" srcset="/img/loading.gif" width="700">  
 
 <p>最后两个直接忽略掉。又百度到了新的教程<em><del><u><a href="https://blog.csdn.net/ibigboy/article/details/90480376" title="一个很多错误情况都涵盖了但一般教程都没提到的无脑教程" target="_blank" rel="noopener">一个很多错误情况都涵盖了但一般教程都没提到的无脑教程</a></u></del></em><br>其中出现问题也都基本一致，下面截几张图走个流程。。。  <img src="/home/rikkiyang/myBlog/source/pictures/8.png" srcset="/img/loading.gif" width="700">  </p>
 <p><img src="/home/rikkiyang/myBlog/source/pictures/9.jpg" srcset="/img/loading.gif" width="700"> 这里认真看了提醒</p>
 </li>
-<li><img src="/home/rikkiyang/myBlog/source/pictures/10.jpg" srcset="/img/loading.gif" width="700">  
-<img src="/home/rikkiyang/myBlog/source/pictures/11.png" srcset="/img/loading.gif" width="700">    
-<img src="/home/rikkiyang/myBlog/source/pictures/12.png" srcset="/img/loading.gif" width="700">  
+<li><img src="/pictures/10.jpg" srcset="/img/loading.gif" width="700">  
+<img src="/pictures/11.png" srcset="/img/loading.gif" width="700">    
+<img src="/pictures/12.png" srcset="/img/loading.gif" width="700">  
 
 <p>  至此我的博客就差不多了。   </p>
 </li>
